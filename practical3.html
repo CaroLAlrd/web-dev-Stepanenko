@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical 3</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<style>
+
+  .border1 {
+        border-style: dotted;
+       
+        padding: 20px;
+    }
+    .border2{
+        border-style: outset;
+       
+    }
+    .border3{
+        border-style: ridge;
+          padding: 20px
+        
+    }
+    .border4{
+        border-style: dashed;
+        padding: 20px;
+        
+    }
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+  
+   
+   
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .display-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .display-bottommiddle {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        padding: 64px;
+        color: white;
+    }
+
+    #topics, #topic {
+        max-width: 800px;
+        margin: auto;
+        padding: 0 16px;
+    }
+
+    .wide {
+        text-aling:center;
+        margin-top: 64px;
+        margin-bottom: 32px;
+        
+    }
+
+    .opacity {
+    
+        opacity: 0.8;
+    }
+    
+        .bg{
+        height: 500px;
+        opacity: 0.5;
+        background:
+        url(https://ideascdn.lego.com/media/generate/entity/lego_ci/project/8996ae18-63ef-4976-bb95-55cbceee6d48/1/resize:1600:900/legacy) 40% 40% no-repeat, 
+        url(https://i.ytimg.com/vi/h7oMWpJFy_I/sddefault.jpg) no-repeat;
+    }
+    
+
+   section{
+    position: relative;
+    text-align: center;
+  padding-top: 100px;
+  
+   
+    }
+    
+   
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.colorful-block1 {
+   
+  
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background-color :rgb(92, 124, 171) ;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.colorful-block2 {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background-color: gray ;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.colorful-block3 {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to right, gray , black);
+}
+
+.colorful-block4 {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: repeating-linear-gradient(white, black);
+    transition: transform 0.3s ease;
+}
+.colorful-block1:hover {
+    transform: translateY(-5px);
+}
+
+.colorful-block2:hover {
+    transform: translateY(-5px);
+}
+.colorful-block3:hover {
+    transform: translateY(-5px);
+}
+.colorful-block4:hover {
+    transform: translateY(-5px);
+}
+
+   
+
+
+</style>
+</head>
+<body>
+
+<div class="display-container">
+    <img src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_wired.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1453495297/wired_we-want-to-believe-the-return-of-the-x-files.jpg" style="width:100%">
+    <div class="display-bottommiddle">
+        
+            <h1>Practical 3</h1>
+            <p><b>Stepanenko Stefania</b></p>
+        </div>
+</div>
+
+<div id="topics">
+
+    <h2 class="wide">The ways to open developers console in Mozilla Firefox and Safari.</h2>
+    <div class="border2">
+    <p class="opacity"><i>Mozilla Firefox</i></p>
+    <ul>
+        <li>Press <span class="border2">Ctrl </span> + <span class="border2">Shift</span> + <span class="border2"> I </span> on Windows/Linux or <span class="border2">Cmd</span> + <span class="border2">Option</span> + I on Mac.</li>
+        <li>Right-click on the webpage and select "Inspect" from the context menu.</li>
+        <li>Go to the menu in the top right corner of the browser, select "Web Developer", and then click on "Web Console".</li>
+    </ul>
+    </div
+    </div>
+    
+     <div class="border3">
+    <p class="opacity"><i>Safari</i></p>
+    <ul>
+        <li>Press Ctrl + Shift + I on Windows/Linux or Cmd + Option + I on Mac.</li>
+        <li>Right-click on the webpage and select "Inspect" from the context menu.</li>
+        <li>Go to the menu in the top right corner of the browser, select "Web Developer", and then click on "Web Console".</li>
+    </ul>
+</div>
+
+<div id="topic">
+    <h2 class="wide">Absolute and Relative links</h2>
+    <div class="border4">
+    <p class="opacity"><i>Absolute links use cases</i></p>
+    <ul>
+        <li>When linking to a page on a different domain.</li>
+        <li>When linking to a specific page that may be moved or renamed frequently.</li>
+        <li>When sharing links externally or across different platforms.</li>
+        <li>When linking to resources like images, stylesheets, or scripts hosted on a different domain.</li>
+    </ul>
+    </div>
+    
+    <div class="border1">
+    <p class="opacity"><i>Relative links use cases</i></p>
+    <ul>
+        <li>When linking within the same website or domain.</li>
+        <li>When linking to pages within the same directory or subdirectory.</li>
+        <li>When creating a portable website that can be easily moved to a different server without breaking links.</li>
+    </ul>
+    </div>
+
+<div id="topic">
+    <h2 class="wide">Image formats</h2>
+    <p class="opacity"><i>JPG(JPEG)</i></p>
+    <ul>
+            <li>JPG is image format for photographs and complex images.</li>
+            <li>It uses lossy compression, which reduces file size by sacrificing some image quality.</li>
+            <li>It does not support transparency.</li>
+            <li>JPG supports millions of colors.</li>
+        </ul>
+        
+        
+        <p class="opacity"><i>GIF</i></p>
+        <ul>
+            <li>GIF is commonly used for simple images, animations, and graphics with flat colors.</li>
+            <li>It supports transparency and animation.</li>
+            <li>GIF images are limited to 256 colors.</li>
+        </ul>
+        <p class="opacity"><i>PNG</i></p>
+        <ul>
+            <li>PNG is a versatile image format that supports lossless compression, preserving image quality.</li>
+            <li>It supports transparency.</li>
+        </ul>
+        <p class="opacity"><i>WEBP</i></p>
+        <ul>
+            <li>WEBP is a modern image format developed by Google that offers both lossy and lossless compression.</li>
+            <li>It provides smaller file sizes compared to JPG and PNG without compromising image quality.</li>
+            <li>WEBP supports transparency and animation.</li>
+        </ul>
+        <p class="opacity"><i>SVG</i></p>
+        <ul>
+            <li>SVG is a vector image format that uses XML-based code to define shapes, lines, and colors.</li>
+            <li>It scales perfectly to any size without losing quality, making it ideal for responsive design.</li>
+            <li>SVG images are lightweight and can be manipulated with CSS and JavaScript, allowing for interactive and animated graphics on websites.</li>
+        </ul>
+        
+</div>
+
+    <section>
+    
+     <div class="container">
+        <div class="colorful-block1">
+        <p style= "background-color: rgb(92, 124, 171);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero enim, lobortis id aliquam vitae(
+This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus. </p>   
+        </div>
+        <div class="colorful-block2">
+        <p  style="background-color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero enim, lobortis id aliquam vitae(
+This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus.</p>   
+        </div>
+    </section>
+    
+<section>
+     <div class="container">
+        <div class="colorful-block3">
+        <p  style= "background-image: linear-gradient(to right, gray , black);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero enim, lobortis id aliquam vitae(
+This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus. </p>   
+        </div>
+          <div class="colorful-block4">
+        <p  style= "background: repeating-linear-gradient(white, black);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero enim, lobortis id aliquam vitae(
+This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus. </p>   
+        </div>
+</section>
+
+<section>
+ <img src="C:\Users\user\Downloads\css-tricks.com_.png">
+</section>
+
+<div>
+<p style="background: url(https://s2.stc.all.kpcdn.net/putevoditel/serialy/wp-content/uploads/2021/01/Screenshot_2021-01-28-x-files-too-real_tvwu9i-webp-Izobrazhenie-WEBP-1200-800-pikselov.jpg">This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus.</p>   
+</div>
+
+<div>
+
+<p class="bg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero enim, lobortis id aliquam vitae(
+This is my third attempt to produce artificial Vitae. The former compounds lacked the potency I need, but I sense I'm close. Calamine and Orpiment are a given and the Cuprite binds them well. This time I will attempt Aqua Regia instead of Aqua Fortis in hope it will produce a more even solution.), scelerisque sit amet eros. Pellentesque non malesuada libero, sed condimentum lorem. Ut ac elit sed nisl molestie condimentum. Sed sed sapien quis dui rhoncus faucibus.</p>   
+</div>
+</section>
+
+
+   
+
+</body>
+</html>
