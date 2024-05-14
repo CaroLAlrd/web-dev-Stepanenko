@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical5</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        img {
+            float: right;
+            max-width: 400px;
+            margin-left: 20px;
+            display: block;
+        }
+        .clearfix::after {
+            content: "";
+            clear: right;
+            display: table;
+        }
+        #navi {
+            padding: 5px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+        }
+        header, footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navi">
+            <a href="#box-model">Box Model</a>
+            <a href="#clearfix">Clearfix Hack</a>
+            <a href="#margin-collapse">Margin Collapse</a>
+            <a href="#holy-grail-problem">Holy Grail Problem</a>
+            <a href="#holy-grail-modern">Modern Holy Grail</a>
+        </nav>
+    </header>
+    <main>
+        <article id="box-model" class="clearfix">
+            <h2>What is a Box Model in CSS?</h2>
+            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of margins, borders, padding, and the actual content. The <strong>box-sizing</strong> property allows us to include the padding and border in an element's total width and height.</p>
+           <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fae884219-50b7-4175-892e-bd70922828aa_500x375.jpeg">
+        </article>
+        
+        <article id="clearfix" class="clearfix">
+            <h2>What is a "clearfix hack"?</h2>
+            <p>A "clearfix hack" is a method used to clear floats. It's applied to a parent element that contains floated elements to ensure it encompasses its children.</p>
+           <img src="https://www.w3schools.com/howto/clearfix_prob.jpg"> 
+            <img src="https://www.w3schools.com/howto/clearfix_solution.jpg">
+        </article>
+        
+        <article id="margin-collapse" class="clearfix">
+            <h2>What is "Margin Collapse"?</h2>
+            <p>"Margin collapse" is when the top and bottom margins of blocks are combined into a single margin. <strong>Margin: auto</strong> is used to horizontally center an element within its container, while negative margins are used to overlap elements.</p>
+            <img src="C:\Users\user\Downloads\Снимок экрана 2024-05-14 194034.png">
+        </article>
+        
+        <article id="holy-grail-problem" class="clearfix">
+            <h2>The Holy Grail Layout Problem</h2>
+            <p>The "Holy Grail" layout refers to a page layout with a header, footer, and three columns. The problem was creating this layout with CSS in a flexible and cross-browser compatible way.</p>
+        </article>
+        
+        <article id="holy-grail-modern" class="clearfix">
+            <h2>Modern Ways to Achieve Holy Grail Layout</h2>
+            <p>Modern CSS techniques like Flexbox and CSS Grid have made it easier to create the Holy Grail layout without hacks or complex structures.</p>
+           <img src="https://media.dev.to/cdn-cgi/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Faz3hik6exy16aq9ss1gh.png" >
+        </article>
+    </main>
+    <footer>
+        <p>Stepanenko Stefania</p>
+        <p>Web-design</p>
+        <p>14.05.24</p>
+        <p>Same</p>
+        <p>"Блокнот?"</p>
+    </footer>
+</body>
+</html>
