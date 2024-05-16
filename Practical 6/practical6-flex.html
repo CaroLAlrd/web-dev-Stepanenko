@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical6part2</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+       
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-news img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.top-news-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.top-news-content h2 {
+    margin-top: 0;
+}
+
+.top-news-content p {
+    margin-bottom: 10px;
+}
+
+.news-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+}
+
+.news-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-item-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.news-item-content h3 {
+    margin-top: 0;
+}
+
+.news-item-content .meta-info {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.news-item-content p {
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+    .top-news {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-news img {
+        width: 100%;
+        height: auto;
+    }
+    .top-news-content {
+        margin: 20px 0;
+    }
+    .news-section {
+        width: 100%;
+    }
+    .news-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+    .news-item-content {
+        margin-top: 10px;
+    }
+    .sidebar {
+        order: 2;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .news-item-content p {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-news">
+            <img src="D:\study\WEb-d\169689_rotjbikerscouthelmet_3.jpg">
+            <div class="top-news-content">
+                <h2>Vitae</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="news-section">
+            <div class="news-item">
+                <img src="D:\study\WEb-d\169689_rotjbikerscouthelmet_3.jpg">
+                <div class="news-item-content">
+                    <h3>Vitae</h3>
+                    <p class="meta-info">000000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="D:\study\WEb-d\169689_rotjbikerscouthelmet_3.jpg">
+                <div class="news-item-content">
+                    <h3>VItae</h3>
+                    <p class="meta-info">000000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="D:\study\WEb-d\169689_rotjbikerscouthelmet_3.jpg">
+                <div class="news-item-content">
+                    <h3>Vitae</h3>
+                    <p class="meta-info">000000</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>                
+      
+</body>
+</html>
